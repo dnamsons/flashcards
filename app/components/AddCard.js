@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { View, Button, Alert } from 'react-native'
-import { styles } from '../../common'
+import { styles } from '../common'
 import styled from 'styled-components/native'
 
-import { handleCreateCard } from '../../actions/decks'
+import { handleCreateCard } from '../actions/decks'
 
 const InputHeader = styled.Text`
   font-size: 20px;

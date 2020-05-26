@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { View, Text, Button } from 'react-native'
-import { styles } from '../../common'
+import { styles } from '../common'
 import {
   clearNotification,
   scheduleNotification,
-} from '../../utils/notifications'
+} from '../utils/notifications'
 
 const QuizResults = ({ navigation, route }) => {
   const { id, correctAnswers, cardCount } = route.params

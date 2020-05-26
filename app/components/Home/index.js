@@ -3,8 +3,8 @@ import { createStackNavigator } from '@react-navigation/stack'
 
 import List from './List'
 import Deck from '../Deck'
-import AddCard from './AddCard'
-import Quiz from './Quiz'
+import AddCard from '../AddCard'
+import Quiz from '../Quiz'
 
 const Stack = createStackNavigator()
 

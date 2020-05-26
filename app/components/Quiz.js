@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { View, Text, Button } from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack'
-import { styles } from '../../common'
+import { styles } from '../common'
 
 import QuizResults from './QuizResults'
 

@@ -1,10 +1,9 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { View, Text, Alert } from 'react-native'
-import { CommonActions } from '@react-navigation/native'
 
-import { styles } from '../../common'
-import { handleDeleteDeck } from '../../actions/decks'
+import { styles } from '../common'
+import { handleDeleteDeck } from '../actions/decks'
 
 const Deck = ({ route, navigation }) => {
   const dispatch = useDispatch()
