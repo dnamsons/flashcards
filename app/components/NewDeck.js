@@ -5,7 +5,7 @@ import styled from 'styled-components/native'
 
 import { handleCreateDeck } from '../actions/decks'
 import { styles } from '../common'
-import { createUuid } from '../utils'
+import { createUuid } from '../utils/helpers'
 
 const DeckHeader = styled.Text`
   font-size: 20px;
