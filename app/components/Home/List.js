@@ -9,11 +9,17 @@ const List = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Text>Linst</Text>
       <FlatList
         data={decks}
         renderItem={({ item }) => (
-          <Text onPress={() => navigation.navigate(item.id, { deck: item })}>{item.name}</Text>
+          <Text
+            style={styles.listItem}
+            onPress={() =>
+              navigation.navigate('Deck', { id: item.id, name: item.name })
+            }
+          >
+            {item.name} ({item.questions.length})
+          </Text>
         )}
         keyExtractor={(item) => item.id}
       />

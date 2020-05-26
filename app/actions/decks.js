@@ -1,12 +1,19 @@
 export const CREATE_DECK = 'CREATE_DECK'
 export const DELETE_DECK = 'DELETE_DECK'
-export const EDIT_DECK = 'EDIT_DECK'
+export const CREATE_CARD = 'CREATE_CARD'
 
 const createDeck = (deck) => ({ type: CREATE_DECK, deck })
 
-export const handleCreateDeck = (deckName) => (dispatch) => {
-  const uniqueId =
-    Math.random().toString(36).substring(2) + Date.now().toString(36)
-
-  dispatch(createDeck({ id: uniqueId, name: deckName, questions: [] }))
+export const handleCreateDeck = (id, name) => (dispatch) => {
+  dispatch(createDeck({ id, name, questions: [] }))
 }
+
+const createCard = (id, question) => ({ type: CREATE_CARD, id, question })
+
+export const handleCreateCard = (id, question, answer) => (dispatch) => {
+  dispatch(createCard(id, { question, answer }))
+}
+
+const deleteDeck = (id) => ({ type: DELETE_DECK, id })
+
+export const handleDeleteDeck = (id) => (dispatch) => dispatch(deleteDeck(id))
