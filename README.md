@@ -2,6 +2,9 @@
 
 This is the third project for the Udacity React microdegree program, focusing on the usage of React Native.
 
+
+The project has been tested on Android 10, using a physical device
+
 ## Setup
 
 ```
